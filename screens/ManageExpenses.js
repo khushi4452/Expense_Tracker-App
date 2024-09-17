@@ -1,8 +1,8 @@
 import { Text } from 'react-native';
 
-function ManageExpense()  {
+function ManageExpense() {
     return <Text>
-    ManageExpense Screen   
+        ManageExpense Screen
     </Text>
 }
-export default ManageExpense ;
+export default ManageExpense;

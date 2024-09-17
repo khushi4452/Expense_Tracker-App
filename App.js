@@ -15,61 +15,61 @@ const BottomTabs = createBottomTabNavigator();
 function ExpensesOverview() {
   return (
 
-<BottomTabs.Navigator
- screenOptions={{
-headerStyle: { backgroundColor: GlobalStyles.colors.primary200 },
-headerTintColor: 'black',
-tabBarStyle: { backgroundColor: GlobalStyles.colors.primary200 },
-tabBarActiveTintColor: GlobalStyles.colors.accent500,
-headerRight: () => {
-  
-}
-}}
- >
+    <BottomTabs.Navigator
+      screenOptions={{
+        headerStyle: { backgroundColor: GlobalStyles.colors.primary200 },
+        headerTintColor: 'black',
+        tabBarStyle: { backgroundColor: GlobalStyles.colors.primary200 },
+        tabBarActiveTintColor: GlobalStyles.colors.accent500,
+        headerRight: () => {
+
+        }
+      }}
+    >
 
 
-<BottomTabs.Screen
-name="RecentExpenses"
-component={RecentExpenses}
- options={{
- title: 'Recent Expenses',
- tabBarLabel: 'Recent',
-tabBarIcon: ({ color, size }) => (
-<Ionicons name="hourglass" size={size} color={color} />
- ),
-}}
+      <BottomTabs.Screen
+        name="RecentExpenses"
+        component={RecentExpenses}
+        options={{
+          title: 'Recent Expenses',
+          tabBarLabel: 'Recent',
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="hourglass" size={size} color={color} />
+          ),
+        }}
 
-/>
-<BottomTabs.Screen
-name="AllExpenses"
-component={AllExpenses}
-options={{
-title: 'All Expenses',
-tabBarLabel: 'All',
-tabBarIcon: ({ color, size }) => (
-<Ionicons name="calendar" size={size} color={color} />
-),
-}}
-/>
- </BottomTabs.Navigator>
- );
+      />
+      <BottomTabs.Screen
+        name="AllExpenses"
+        component={AllExpenses}
+        options={{
+          title: 'All Expenses',
+          tabBarLabel: 'All',
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="calendar" size={size} color={color} />
+          ),
+        }}
+      />
+    </BottomTabs.Navigator>
+  );
 }
 
 export default function App() {
-return (
-<>
-<StatusBar style="auto" />
-<NavigationContainer>
-<Stack.Navigator>
-        
-<Stack.Screen
-name="ExpensesOverview"
-component={ExpensesOverview}
-options={{ headerShown: false }}
-/>
-<Stack.Screen name="ManageExpense" component={ManageExpense} />
- </Stack.Navigator>
-</NavigationContainer>
+  return (
+    <>
+      <StatusBar style="auto" />
+      <NavigationContainer>
+        <Stack.Navigator>
+
+          <Stack.Screen
+            name="ExpensesOverview"
+            component={ExpensesOverview}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen name="ManageExpense" component={ManageExpense} />
+        </Stack.Navigator>
+      </NavigationContainer>
     </>
   );
 }
