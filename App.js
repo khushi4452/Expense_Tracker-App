@@ -21,6 +21,9 @@ headerStyle: { backgroundColor: GlobalStyles.colors.primary200 },
 headerTintColor: 'black',
 tabBarStyle: { backgroundColor: GlobalStyles.colors.primary200 },
 tabBarActiveTintColor: GlobalStyles.colors.accent500,
+headerRight: () => {
+  
+}
 }}
  >
 
