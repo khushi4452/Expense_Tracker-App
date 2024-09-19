@@ -22,7 +22,7 @@ function ExpensesOverview() {
         tabBarStyle: { backgroundColor: GlobalStyles.colors.primary200 },
         tabBarActiveTintColor: GlobalStyles.colors.accent500,
         headerRight: () => {
-
+        
         }
       }}
     >
