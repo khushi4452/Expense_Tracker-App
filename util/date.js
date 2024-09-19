@@ -1,2 +1,3 @@
 export function getformattedDate(date) {
-    return $('')
+    return `${date.getFullYear()}-${date.getMonth()+1}-${date.getDate()}`
+}
