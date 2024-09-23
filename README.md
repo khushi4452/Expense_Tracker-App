@@ -2,7 +2,7 @@
 
 ## 💰 Expense Tracke- App
 
-I created the **Expense Tracker App** using **React Native** to support both iOS and Android platforms.
+I created the **Expense Tracker App** using **React Native** to support both iOS and Android platforms
 
 ### 📋 Key Features:
 - **Track Expenses**: Easily log daily expenses and manage your finances.
