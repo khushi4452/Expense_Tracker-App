@@ -1,6 +1,6 @@
 # 🚀 React Native - Expo CLI ✅
 
-## 💰 Expense Tracke- App
+## 💰 Expense Tracker- App
 
 I created the **Expense Tracker App** using **React Native** to support both iOS and Android platforms
 
